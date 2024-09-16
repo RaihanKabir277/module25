@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour of dom</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+   <header>
+    <h1>Welcome to my DOM</h1>
+   </header> 
+   <main id="main-content">
+    <section>
+        <h1>My Awesome to my Dom</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa ratione corporis. Vitae dolore eveniet provident hic beatae nulla atque.
+
+        </p>
+    <ul>
+        <li>jalali Set</li>
+        <li>Shafayet</li>
+        <li>bonobash</li>
+    </ul>
+    </section>
+    <section class="fruits-container">
+        <h1 id="frutistitle" class="a1 a2 a3 a4">Fruits i like</h1>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Carrot</li>
+        </ul>
+    </section>
+    <section id="places-container" class="large-text">
+        <h1 id="placestitle">Places i like to visit</h1>
+       <ul id="places-list">
+        <li class="Places">Sundharban</li>
+        <li class="Places">Kataban</li>
+        <li class="Places">Bandhorbon</li>
+        <li>Shalbon</li>
+       </ul>
+    </section>
+   </main>
+   <script src="js/dom.js">
+
+   </script>
+   <script src="js/append.js"></script>
+   <script src="js/stylej.js"></script>
+   <script>
+    // const student = {
+    //     name: 'ABUL',
+    //     ID: 11,
+    //     study: function(time){
+    //         console.log(time, 'study kortase');
+    //     }
+    // }
+    // console.log('inside html');
+
+    const liAll = document.getElementsByTagName('li');
+    console.log(liAll);
+    for(const li of liAll){
+        // console.log(li.innerText);
+    }
+    const place = document.getElementsByClassName('places');
+    for(const find of place){
+        // console.log(place.innerText);
+    }
+    // querySelectorAll -----
+    const someLi = document.querySelectorAll('.fruits-container li');
+    for(const li of someLi){
+    //     console.log(li.innerText);
+     }
+   </script>
+</body>
+</html>
